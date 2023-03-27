@@ -43,8 +43,17 @@
   <ItemGroup>
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\Art\gfx" />
      <Folder Include="Assets\Settings" />
+     <Folder Include="Assets\Art\Pokemons\Back" />
+     <Folder Include="Assets\Art\Pokemons" />
+     <Folder Include="Assets\Art\UI" />
+     <Folder Include="Assets\Art\Battle" />
      <Folder Include="Assets\Settings\Scenes" />
+     <Folder Include="Assets\Art" />
+     <Folder Include="Assets\Art\Pokemons\Front" />
+     <Folder Include="Assets\Art\Items" />
+     <Folder Include="Assets\Art\Trianers" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity 2021.3.19f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

@@ -17,6 +17,7 @@ namespace ScriptableObjectsScripts
 
         public int hp;
         public int maxHp;
+        public int attack;
         public int defense;
         public int spAttack;
         public int spDefense;

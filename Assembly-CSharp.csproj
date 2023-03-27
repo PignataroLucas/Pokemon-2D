@@ -42,9 +42,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player\MVC\PlayerModel.cs" />
-     <Compile Include="Assets\Scripts\Player\MVC\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\MVC\PlayerView.cs" />
+     <Compile Include="Assets\Scripts\Player\MVC\PlayerController.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjectsScripts\PokemonAttributes.cs" />
+     <Compile Include="Assets\Scripts\Pokemon\Pokemon.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Art\Animations &amp; Controllers" />
@@ -53,6 +54,7 @@
      <Folder Include="Assets\Settings" />
      <Folder Include="Assets\Art\Pokemons\Back" />
      <Folder Include="Assets\Art\Pokemons" />
+     <Folder Include="Assets\Scripts\Pokemon" />
      <Folder Include="Assets\Art\UI" />
      <Folder Include="Assets\Art\Battle" />
      <Folder Include="Assets\Settings\Scenes" />

@@ -6,23 +6,23 @@ namespace ScriptableObjectsScripts
     public class PokemonAttributes : ScriptableObject
     {
 
-        public new string name;
+        [SerializeField] private new string name;
         [TextArea]
-        public string description;
+        [SerializeField] private string description;
 
-        public Sprite frontSprite;
-        public Sprite backSprite;
-        public PokemonType type, type2;
-        public PokemonAttributes secondEvolution, thirdEvolution;
+        [SerializeField] private Sprite frontSprite;
+        [SerializeField] private Sprite backSprite;
+        [SerializeField] private PokemonType type, type2;
+        [SerializeField] private PokemonAttributes secondEvolution, thirdEvolution;
 
-        public int hp;
-        public int maxHp;
-        public int attack;
-        public int defense;
-        public int spAttack;
-        public int spDefense;
-        public int speed;
-        public int fistEvolutionLevel, secondEvolutionLevel;
+        [SerializeField] private int hp;
+        [SerializeField] private int maxHp;
+        [SerializeField] private int attack;
+        [SerializeField] private int defense;
+        [SerializeField] private int spAttack;
+        [SerializeField] private int spDefense;
+        [SerializeField] private int speed;
+        [SerializeField] private int fistEvolutionLevel, secondEvolutionLevel;
 
 
     }

@@ -4,6 +4,8 @@ namespace Pokemon
 {
     public class Pokemon
     {
-        
+           
     }
+    
+    
 }

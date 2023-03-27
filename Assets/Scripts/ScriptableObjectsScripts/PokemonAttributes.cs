@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace ScriptableObjectsScripts
 {
@@ -21,6 +23,7 @@ namespace ScriptableObjectsScripts
         [SerializeField] private int spAttack;
         [SerializeField] private int spDefense;
         [SerializeField] private int speed;
+        [SerializeField] private List<LearnableMoves> learnableMoves;
         [SerializeField] private int fistEvolutionLevel, secondEvolutionLevel;
 
         public string GetName(){return name;}
@@ -36,8 +39,21 @@ namespace ScriptableObjectsScripts
         public int SpAttack => spAttack;
         public int SpDefense => spDefense;
         public int Speed => speed;
-        
+        public List<LearnableMoves> LearnableMovesList => learnableMoves;
 
+
+
+    }
+
+    [System.Serializable]
+    public struct LearnableMoves
+    { 
+        [SerializeField] private MoveAttributes moveAttributes;
+        [SerializeField] private int level;
+        
+        public MoveAttributes MoveAttributes => moveAttributes;
+        public int Level => level;
+        
     }
 
     public enum PokemonType

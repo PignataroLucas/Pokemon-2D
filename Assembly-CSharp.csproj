@@ -46,6 +46,8 @@
      <Compile Include="Assets\Scripts\Player\MVC\PlayerController.cs" />
      <Compile Include="Assets\Scripts\ScriptableObjectsScripts\PokemonAttributes.cs" />
      <Compile Include="Assets\Scripts\Pokemon\Pokemon.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObjectsScripts\MoveAttributes.cs" />
+     <Compile Include="Assets\Scripts\Moves\Move.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Art\Animations &amp; Controllers" />
@@ -64,9 +66,12 @@
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Resources\Scriptable Objects" />
      <Folder Include="Assets\Art\Items" />
+     <Folder Include="Assets\Scripts\Moves" />
      <Folder Include="Assets\Art\Animations &amp; Controllers\Player" />
      <Folder Include="Assets\Art\Trianers" />
      <Folder Include="Assets\Art\Tiles Pallet" />
+     <Folder Include="Assets\Resources\Scriptable Objects\Moves" />
+     <Folder Include="Assets\Resources\Scriptable Objects\Pokemons" />
      <Folder Include="Assets\Scripts\Player" />
      <Folder Include="Assets\Resources" />
      <Reference Include="UnityEngine">

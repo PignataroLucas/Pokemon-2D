@@ -22,12 +22,18 @@ MonoBehaviour:
   type2: 0
   secondEvolution: {fileID: 0}
   thirdEvolution: {fileID: 0}
-  hp: 39
-  maxHp: 9000
+  maxHp: 126
   attack: 52
   defense: 43
   spAttack: 60
   spDefense: 50
   speed: 65
+  learnableMoves:
+  - moveAttributes: {fileID: 11400000, guid: d48fbb0f8772df34ea31ab9237e35c20, type: 2}
+    level: 1
+  - moveAttributes: {fileID: 11400000, guid: 1ca5876a60a069a4997bb96ada280cc3, type: 2}
+    level: 4
+  - moveAttributes: {fileID: 11400000, guid: 58a95a9ce85f2e442b6e857a0193d389, type: 2}
+    level: 7
   fistEvolutionLevel: 16
   secondEvolutionLevel: 36

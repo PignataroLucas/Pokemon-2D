@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Grass
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 2402440237
+    locked: 0
+  - name: Foreground
+    uniqueID: 1378963011
     locked: 0
   - name: Player
     uniqueID: 3332942531

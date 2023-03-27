@@ -14,8 +14,7 @@ namespace ScriptableObjectsScripts
         [SerializeField] private Sprite backSprite;
         [SerializeField] private PokemonType type, type2;
         [SerializeField] private PokemonAttributes secondEvolution, thirdEvolution;
-
-        [SerializeField] private int hp;
+        
         [SerializeField] private int maxHp;
         [SerializeField] private int attack;
         [SerializeField] private int defense;
@@ -24,6 +23,20 @@ namespace ScriptableObjectsScripts
         [SerializeField] private int speed;
         [SerializeField] private int fistEvolutionLevel, secondEvolutionLevel;
 
+        public string GetName(){return name;}
+        public string Name => name;
+        public string Description => description;
+        public Sprite FrontSprite => frontSprite;
+        public Sprite BackSprite => backSprite;
+        public PokemonType Type => type;
+        public PokemonType Type2 => type2;
+        public int MaxHp => maxHp;
+        public int Attack => attack;
+        public int Defense => defense;
+        public int SpAttack => spAttack;
+        public int SpDefense => spDefense;
+        public int Speed => speed;
+        
 
     }
 

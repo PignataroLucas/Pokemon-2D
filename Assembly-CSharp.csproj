@@ -44,8 +44,10 @@
      <Compile Include="Assets\Scripts\Player\MVC\PlayerModel.cs" />
      <Compile Include="Assets\Scripts\Player\MVC\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\MVC\PlayerView.cs" />
+     <Compile Include="Assets\Scripts\ScriptableObjectsScripts\PokemonAttributes.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
+     <Folder Include="Assets\Art\Animations &amp; Controllers" />
      <Folder Include="Assets\Art\gfx" />
      <Folder Include="Assets\Scripts\Player\MVC" />
      <Folder Include="Assets\Settings" />
@@ -55,12 +57,16 @@
      <Folder Include="Assets\Art\Battle" />
      <Folder Include="Assets\Settings\Scenes" />
      <Folder Include="Assets\Art" />
+     <Folder Include="Assets\Scripts\ScriptableObjectsScripts" />
      <Folder Include="Assets\Art\Pokemons\Front" />
      <Folder Include="Assets\Scripts" />
+     <Folder Include="Assets\Resources\Scriptable Objects" />
      <Folder Include="Assets\Art\Items" />
+     <Folder Include="Assets\Art\Animations &amp; Controllers\Player" />
      <Folder Include="Assets\Art\Trianers" />
      <Folder Include="Assets\Art\Tiles Pallet" />
      <Folder Include="Assets\Scripts\Player" />
+     <Folder Include="Assets\Resources" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity 2021.3.19f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

@@ -144,12 +144,12 @@ TextureImporter:
       name: Battle Backgrounds_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 438.75
-        width: 258.33334
-        height: 146.25
+        x: 2
+        y: 440
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Battle Backgrounds_1
       rect:
         serializedVersion: 2
-        x: 258
-        y: 438.75
-        width: 258.33334
-        height: 146.25
+        x: 260
+        y: 440
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: Battle Backgrounds_2
       rect:
         serializedVersion: 2
-        x: 516
-        y: 438.75
-        width: 258.33334
-        height: 146.25
+        x: 518
+        y: 440
+        width: 255
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,12 +207,12 @@ TextureImporter:
       name: Battle Backgrounds_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 292.75
-        width: 258.33334
-        height: 146.25
+        x: 2
+        y: 294
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: Battle Backgrounds_4
       rect:
         serializedVersion: 2
-        x: 258
-        y: 292.75
-        width: 258.33334
-        height: 146.25
+        x: 260
+        y: 294
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: Battle Backgrounds_5
       rect:
         serializedVersion: 2
-        x: 520
-        y: 295
-        width: 251
-        height: 140
+        x: 518
+        y: 294
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,12 +270,12 @@ TextureImporter:
       name: Battle Backgrounds_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 146.75
-        width: 258.33334
-        height: 146.25
+        x: 2
+        y: 148
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: Battle Backgrounds_7
       rect:
         serializedVersion: 2
-        x: 258
-        y: 146.75
-        width: 258.33334
-        height: 146.25
+        x: 260
+        y: 148
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Battle Backgrounds_8
       rect:
         serializedVersion: 2
-        x: 516
-        y: 146.75
-        width: 258.33334
-        height: 146.25
+        x: 518
+        y: 148
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,12 +333,12 @@ TextureImporter:
       name: Battle Backgrounds_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0.75
-        width: 258.33334
-        height: 146.25
+        x: 2
+        y: 2
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,12 +354,12 @@ TextureImporter:
       name: Battle Backgrounds_10
       rect:
         serializedVersion: 2
-        x: 258
-        y: 0.75
-        width: 258.33334
-        height: 146.25
+        x: 260
+        y: 2
+        width: 255
+        height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -380,7 +380,7 @@ TextureImporter:
         width: 258.33334
         height: 146.25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

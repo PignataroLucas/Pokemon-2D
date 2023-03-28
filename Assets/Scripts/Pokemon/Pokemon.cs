@@ -6,23 +6,22 @@ namespace Pokemon
 {
     public class Pokemon
     {
-        private PokemonAttributes _attributes;
-        private int _level;
+        public PokemonAttributes Attributes { get; set; }
+        public int Level { get; set; }
         public int Hp { get; set; }
-
         public List<Move> Moves { get; set; }
         
         
 
         public Pokemon(PokemonAttributes pokemonAttributes, int level)
         {
-            _attributes = pokemonAttributes;
-            _level = level;
-            Hp = _attributes.MaxHp;
+            Attributes = pokemonAttributes;
+            Level = level;
+            Hp = MaxHp;
 
             //Generates Moves
             Moves = new List<Move>();
-            foreach (var move in _attributes.LearnableMovesList)
+            foreach (var move in Attributes.LearnableMovesList)
             {
                 Moves.Add(new Move(move.MoveAttributes));
 
@@ -33,12 +32,12 @@ namespace Pokemon
             }
         }
         
-        public int MaxHp => Mathf.FloorToInt((_attributes.MaxHp * _level) / 100f) + 10;
-        public int Attack => Mathf.FloorToInt((_attributes.Attack * _level) / 100f) + 5;
-        public int Defense => Mathf.FloorToInt((_attributes.Defense * _level) / 100f) + 5;
-        public int SpAttack => Mathf.FloorToInt((_attributes.SpAttack * _level) / 100f) + 5;
-        public int SpDefense => Mathf.FloorToInt((_attributes.SpDefense * _level) / 100f) + 5;
-        public int Speed => Mathf.FloorToInt((_attributes.Speed * _level) / 100f) + 5;
+        public int MaxHp => Mathf.FloorToInt((Attributes.MaxHp * Level) / 100f) + 10;
+        public int Attack => Mathf.FloorToInt((Attributes.Attack * Level) / 100f) + 5;
+        public int Defense => Mathf.FloorToInt((Attributes.Defense * Level) / 100f) + 5;
+        public int SpAttack => Mathf.FloorToInt((Attributes.SpAttack * Level) / 100f) + 5;
+        public int SpDefense => Mathf.FloorToInt((Attributes.SpDefense * Level) / 100f) + 5;
+        public int Speed => Mathf.FloorToInt((Attributes.Speed * Level) / 100f) + 5;
         
         
     }

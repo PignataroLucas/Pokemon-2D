@@ -7,8 +7,8 @@ namespace Battle
 {
     public class BattleSystem : MonoBehaviour
     {
-        [SerializeField] private BattlePokemon playerPokemon;
-        [SerializeField] private BattleHudUIManager playerHud;
+        [SerializeField] private BattlePokemon playerPokemon,enemyPokemon;
+        [SerializeField] private BattleHudUIManager playerHud,enemyHud;
 
         private void Start()
         {
@@ -18,8 +18,9 @@ namespace Battle
         private void SetUpBattle()
         {
             playerPokemon.SetUp();
+            enemyPokemon.SetUp();
             playerHud.SetData(playerPokemon.Pokemon);
-            
+            enemyHud.SetData(enemyPokemon.Pokemon);
         }
         
     }

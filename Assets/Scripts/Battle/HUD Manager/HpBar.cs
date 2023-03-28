@@ -1,5 +1,5 @@
+using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Battle.HUD_Manager
@@ -7,12 +7,18 @@ namespace Battle.HUD_Manager
     public class HpBar : MonoBehaviour
     {
         [SerializeField] private Image healthBar;
-
+        [SerializeField] private TMP_Text currentHp, maxHp;
        
         public void SetHp(float hpNormalized)
         {
             //health.transform.localScale = new Vector3(hpNormalized, 1f);
             healthBar.fillAmount = hpNormalized;
+        }
+
+        public void SetHp(int _currentHp, int _maxHp)
+        {
+            currentHp.text = _currentHp.ToString() + "/";
+            maxHp.text = _maxHp.ToString();
         }
     }
 }

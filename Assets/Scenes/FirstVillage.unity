@@ -12757,6 +12757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1799555673}
+  letterPerSecond: 30
 --- !u!1 &1694296713
 GameObject:
   m_ObjectHideFlags: 0

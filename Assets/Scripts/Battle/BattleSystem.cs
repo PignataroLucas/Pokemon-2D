@@ -21,7 +21,7 @@ namespace Battle
             enemyPokemon.SetUp();
             playerHud.SetData(playerPokemon.Pokemon);
             enemyHud.SetData(enemyPokemon.Pokemon);
-            dialogBox.SetDialog($"A wild  {enemyPokemon.Pokemon.Attributes.name} appeared.");
+            StartCoroutine( dialogBox.TypeDialog($"A wild  {enemyPokemon.Pokemon.Attributes.name} appeared."));
         }
         
     }

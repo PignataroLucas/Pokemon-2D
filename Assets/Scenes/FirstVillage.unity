@@ -13269,7 +13269,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1799555673}
+  ppText: {fileID: 2076934756}
+  typeMoveText: {fileID: 971365959}
   letterPerSecond: 30
+  actionSelector: {fileID: 328099558}
+  moveSelector: {fileID: 472418268}
+  moveDetails: {fileID: 1646384805}
+  actionText:
+  - {fileID: 455903420}
+  - {fileID: 917457116}
+  moveText:
+  - {fileID: 1946930602}
+  - {fileID: 2078695391}
+  - {fileID: 1582637483}
+  - {fileID: 1678567240}
 --- !u!1 &1694296713
 GameObject:
   m_ObjectHideFlags: 0

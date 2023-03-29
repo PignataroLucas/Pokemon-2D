@@ -49,4 +49,10 @@ public class FSM <T>
 public static class State
 {
     // public const string Idle = "Idle";
+
+    public const string Start = "Start";
+    public const string PlayerAction = "PlayerAction";
+    public const string PlayerMove = "PlayerMove";
+    public const string EnemyMove = "EnemyMove";
+    public const string Busy = "Busy";
 }

@@ -1,4 +1,3 @@
-using System;
 using Battle.Battle__Pokemon;
 using Battle.HUD_Manager;
 using UnityEngine;
@@ -9,6 +8,7 @@ namespace Battle
     {
         [SerializeField] private BattlePokemon playerPokemon,enemyPokemon;
         [SerializeField] private BattleHudUIManager playerHud,enemyHud;
+        [SerializeField] private BattleDialogBox dialogBox;
 
         private void Start()
         {
@@ -21,6 +21,7 @@ namespace Battle
             enemyPokemon.SetUp();
             playerHud.SetData(playerPokemon.Pokemon);
             enemyHud.SetData(enemyPokemon.Pokemon);
+            dialogBox.SetDialog($"A wild  {enemyPokemon.Pokemon.Attributes.name} appeared.");
         }
         
     }

@@ -45,6 +45,7 @@
      <Compile Include="Assets\Scripts\ScriptableObjectsScripts\MoveAttributes.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\Scripts\AI\States.cs" />
      <Compile Include="Assets\Scripts\Player\MVC\PlayerModel.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
@@ -57,8 +58,11 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\Scripts\AI\FSM.cs" />
      <Compile Include="Assets\Scripts\Player\MVC\PlayerView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Utility\Managers\IEventListener.cs" />
+     <Compile Include="Assets\Scripts\Utility\Managers\GenericEvents.cs" />
      <Compile Include="Assets\Scripts\Player\MVC\PlayerController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -67,6 +71,7 @@
      <Compile Include="Assets\Scripts\Battle\HUD Manager\HpBar.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\Scripts\Utility\Managers\EventManager.cs" />
      <Compile Include="Assets\Scripts\Moves\Move.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
@@ -86,11 +91,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Scripts\Utility\Managers\EventManager.cs" />
-     <Compile Include="Assets\Scripts\Utility\Managers\GenericEvents.cs" />
-     <Compile Include="Assets\Scripts\Utility\Managers\IEventListener.cs" />
-     <Compile Include="Assets\Scripts\AI\States.cs" />
-     <Compile Include="Assets\Scripts\AI\FSM.cs" />
+     <Compile Include="Assets\Scripts\Battle\HUD Manager\BattleDialogBox.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -23,12 +23,9 @@ namespace Pokemon
             Moves = new List<Move>();
             foreach (var move in Attributes.LearnableMovesList)
             {
-                Moves.Add(new Move(move.MoveAttributes));
+                if(move.Level <= Level) Moves.Add(new Move(move.MoveAttributes));
 
-                if (Moves.Count >= 4)
-                {
-                    break;
-                }
+                if (Moves.Count >= 4) break;
             }
         }
         

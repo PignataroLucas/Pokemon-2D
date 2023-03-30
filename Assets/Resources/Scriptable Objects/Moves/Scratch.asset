@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4959d27b0f3dd7d46bc588ff7a54b475, type: 3}
   m_Name: Scratch
   m_EditorClassIdentifier: 
-  name: 
+  name: Scratch
   description: "Hard, pointed, and sharp claws rake the foe to inflict damage.\r"
   type: 11
   power: 40

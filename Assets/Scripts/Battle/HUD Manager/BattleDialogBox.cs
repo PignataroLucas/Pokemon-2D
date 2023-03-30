@@ -49,6 +49,21 @@ namespace Battle.HUD_Manager
                 actionText[i].color = i == selectedAction ? highlightedColor : Color.black;
             }
         }
+
+        public void SetMoveNames(List<Move> moves)
+        {
+            for (int i = 0; i < moveText.Count; i++)
+            {
+                if (i < moves.Count)
+                {
+                    moveText[i].text = moves[i].MoveAttributes.Name;    
+                }
+                else
+                {
+                    moveText[i].text = "-";
+                }
+            }
+        }
         
     }
 }

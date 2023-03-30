@@ -37,6 +37,8 @@ namespace Battle
             
             _startBattle.SetTransition(State.PlayerAction,_playerAction);
             _playerAction.SetTransition(State.PlayerMove,_playerMove);
+            
+            
         }
         
         private void Update()

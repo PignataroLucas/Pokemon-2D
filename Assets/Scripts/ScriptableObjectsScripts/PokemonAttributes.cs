@@ -8,7 +8,7 @@ namespace ScriptableObjectsScripts
     public class PokemonAttributes : ScriptableObject
     {
 
-        [SerializeField] private new string name;
+        [SerializeField] private string name;
         [TextArea]
         [SerializeField] private string description;
 
@@ -26,7 +26,7 @@ namespace ScriptableObjectsScripts
         [SerializeField] private List<LearnableMoves> learnableMoves;
         [SerializeField] private int fistEvolutionLevel, secondEvolutionLevel;
 
-        public string GetName(){return name;}
+       
         public string Name => name;
         public string Description => description;
         public Sprite FrontSprite => frontSprite;

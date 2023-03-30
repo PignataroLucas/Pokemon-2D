@@ -1,4 +1,8 @@
-public enum GenericEvents
+namespace Utility.Managers
 {
-    ChangeState,
+    public enum GenericEvents
+    {
+        ChangeState,
+        Test
+    }
 }

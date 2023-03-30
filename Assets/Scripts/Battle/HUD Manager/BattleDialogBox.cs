@@ -15,6 +15,8 @@ namespace Battle.HUD_Manager
         [SerializeField] private List<TMP_Text> actionText;
         [SerializeField] private List<TMP_Text> moveText;
 
+        [SerializeField] private Color highlightedColor;
+
         
         public IEnumerator TypeDialog(string dialog)
         {
@@ -32,12 +34,20 @@ namespace Battle.HUD_Manager
         }
         public void EnableActionSelector(bool enable)
         {
-            actionSelector.SetActive(true);
+            actionSelector.SetActive(enable);
         }
         public void MoveEnableSelector(bool enable)
         {
             moveSelector.SetActive(enable);
             moveDetails.SetActive(enable);
+        }
+
+        public void UpdateActionSelection(int selectedAction)
+        {
+            for (int i = 0; i < actionText.Count; i++)
+            {
+                actionText[i].color = i == selectedAction ? highlightedColor : Color.black;
+            }
         }
         
     }

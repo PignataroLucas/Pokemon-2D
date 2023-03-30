@@ -14,7 +14,6 @@ namespace Battle.States_Battle
         {
             _battleSystem = battleSystem;
             _monoBehaviour = monoBehaviour;
-            
         }
 
         public override void OnEnter()

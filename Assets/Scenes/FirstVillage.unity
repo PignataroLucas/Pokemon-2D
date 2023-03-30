@@ -13359,6 +13359,7 @@ MonoBehaviour:
   - {fileID: 2078695391}
   - {fileID: 1582637483}
   - {fileID: 1678567240}
+  highlightedColor: {r: 0, g: 0.3291808, b: 0.8867924, a: 1}
 --- !u!1 &1694296713
 GameObject:
   m_ObjectHideFlags: 0

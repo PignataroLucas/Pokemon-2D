@@ -54,15 +54,19 @@ namespace Battle.HUD_Manager
         {
             for (int i = 0; i < moveText.Count; i++)
             {
-                if (i < moves.Count)
-                {
-                    moveText[i].text = moves[i].MoveAttributes.Name;    
-                }
-                else
-                {
-                    moveText[i].text = "-";
-                }
+                moveText[i].text = i < moves.Count ? moves[i].MoveAttributes.Name : "-";
             }
+        }
+
+        public void UpdateMoveSelection(int selectedAction , Move move)
+        {
+            for (int i = 0; i < moveText.Count; i++)
+            {
+                moveText[i].color = i == selectedAction ? highlightedColor : Color.black;
+            }
+
+            ppText.text = $"PP {move.Pp}/{move.MoveAttributes.Pp}";
+            typeMoveText.text = move.MoveAttributes.Type.ToString(); 
         }
         
     }

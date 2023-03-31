@@ -31,9 +31,9 @@ MonoBehaviour:
   learnableMoves:
   - moveAttributes: {fileID: 11400000, guid: d48fbb0f8772df34ea31ab9237e35c20, type: 2}
     level: 2
-  - moveAttributes: {fileID: 11400000, guid: 1ca5876a60a069a4997bb96ada280cc3, type: 2}
-    level: 3
   - moveAttributes: {fileID: 11400000, guid: 58a95a9ce85f2e442b6e857a0193d389, type: 2}
+    level: 3
+  - moveAttributes: {fileID: 11400000, guid: 02eecc3e694489241884feb59f59f62f, type: 2}
     level: 15
   fistEvolutionLevel: 16
   secondEvolutionLevel: 36

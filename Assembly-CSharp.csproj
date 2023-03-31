@@ -98,8 +98,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\TestEvent.cs" />
-     <Compile Include="Assets\TestDebug.cs" />
+     <Compile Include="Assets\Scripts\Battle\MathFormulas\MathFunctions.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -124,6 +123,7 @@
      <Folder Include="Assets\Scripts\Pokemon" />
      <Folder Include="Assets\Art\UI" />
      <Folder Include="Assets\Art\Battle" />
+     <Folder Include="Assets\Scripts\Battle\MathFormulas" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\Scripts\Utility\Managers" />
      <Folder Include="Assets\Settings\Scenes" />

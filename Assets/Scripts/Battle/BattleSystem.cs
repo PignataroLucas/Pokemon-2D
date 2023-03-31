@@ -30,14 +30,15 @@ namespace Battle
         {
             _startBattle = new StartBattle<string>(this,this);
             _playerAction = new PlayerAction<string>(this,this);
-            _playerMove = new PlayerMove<string>(this);
-            _enemyMove = new EnemyMove<string>();
+            _playerMove = new PlayerMove<string>(this,this);
+            _enemyMove = new EnemyMove<string>(this,this);
             _busy = new Busy<string>();
             _fsm = new FSM<string>(_startBattle);
             
             _startBattle.SetTransition(State.PlayerAction,_playerAction);
             _playerAction.SetTransition(State.PlayerMove,_playerMove);
-            
+            _playerMove.SetTransition(State.EnemyMove , _enemyMove);
+            _enemyMove.SetTransition(State.PlayerAction,_playerAction);
             
         }
         

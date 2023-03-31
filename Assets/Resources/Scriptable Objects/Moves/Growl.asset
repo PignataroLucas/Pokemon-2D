@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Growl
   description: "The user growls in an endearing way, making the foe less wary. The
     target\u2019s Attack stat is lowered."
-  type: 11
+  type: 1
   power: 0
   accuracy: 100
   pp: 44

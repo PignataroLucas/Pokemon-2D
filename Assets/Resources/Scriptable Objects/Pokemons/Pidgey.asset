@@ -18,8 +18,8 @@ MonoBehaviour:
     familiar surroundings.\r"
   frontSprite: {fileID: 21300000, guid: dd49e43d1c06fa54394658d321a36b24, type: 3}
   backSprite: {fileID: 0}
-  type: 11
-  type2: 6
+  type: 10
+  type2: 1
   secondEvolution: {fileID: 0}
   thirdEvolution: {fileID: 0}
   maxHp: 40
@@ -30,7 +30,7 @@ MonoBehaviour:
   speed: 56
   learnableMoves:
   - moveAttributes: {fileID: 11400000, guid: 7c5f73f5e18ed444f87e500e6894a8e8, type: 2}
-    level: 0
+    level: 1
   - moveAttributes: {fileID: 11400000, guid: 23c3d6b2b8c6bf34ebc108878c4f9bdd, type: 2}
     level: 5
   - moveAttributes: {fileID: 11400000, guid: 02eecc3e694489241884feb59f59f62f, type: 2}

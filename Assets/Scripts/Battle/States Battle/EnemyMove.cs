@@ -1,4 +1,5 @@
 using System.Collections;
+using Pokemon;
 using UnityEngine;
 using Utility.Managers;
 
@@ -26,11 +27,13 @@ namespace Battle.States_Battle
 
             yield return _battleSystem.dialogBox.TypeDialog(
                 $"{_battleSystem.enemyPokemon.Pokemon.Attributes.Name} used {move.MoveAttributes.Name}");
-            yield return new WaitForSeconds(1f);
+            
+            //yield return new WaitForSeconds(1f);
 
-            bool isFainted = _battleSystem.playerPokemon.Pokemon.TakeDamage(move, _battleSystem.playerPokemon.Pokemon);
+            var damageDetails = _battleSystem.playerPokemon.Pokemon.TakeDamage(move, _battleSystem.playerPokemon.Pokemon);
             yield return _battleSystem.playerHud.UpdateHp();
-            if (isFainted)
+            yield return ShowDamageDetails(damageDetails);
+            if (damageDetails.Fainted)
             {
                 yield return _battleSystem.dialogBox.TypeDialog(
                     $"{_battleSystem.playerPokemon.Pokemon.Attributes.Name} Fainted ");
@@ -39,7 +42,19 @@ namespace Battle.States_Battle
             {
                 PlayerActions();
             }
+        }
 
+        IEnumerator ShowDamageDetails(DamageDetails damageDetails)
+        {
+            if (damageDetails.Critical > 1) yield return _battleSystem.dialogBox.TypeDialog("A critical hit!");
+            if (damageDetails.TypeEffectiveness > 1f)
+            {
+                yield return _battleSystem.dialogBox.TypeDialog("It's super effective!");
+            }
+            else if (damageDetails.TypeEffectiveness < 1f)
+            {
+                yield return _battleSystem.dialogBox.TypeDialog("It's not very effective!");
+            }
         }
 
         private void PlayerActions()

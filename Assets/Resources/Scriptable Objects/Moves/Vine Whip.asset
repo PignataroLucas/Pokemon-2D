@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4959d27b0f3dd7d46bc588ff7a54b475, type: 3}
-  m_Name: Quick Attack
+  m_Name: Vine Whip
   m_EditorClassIdentifier: 
-  name: Quick Attack
-  description: "Moves with a higher priority always go first, regardless of a Pok\xE9mon's
-    speed. If two moves with the same priority are used, the faster Pok\xE9mon goes
-    first as usual.\r\t"
-  type: 1
-  power: 40
+  name: Vine Whip
+  description: 'The foe is struck with slender, whiplike vines.
+
+'
+  type: 5
+  power: 35
   accuracy: 100
-  pp: 30
+  pp: 10

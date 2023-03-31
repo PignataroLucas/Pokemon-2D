@@ -36,9 +36,27 @@ namespace Pokemon
         public int SpDefense => Mathf.FloorToInt((Attributes.SpDefense * Level) / 100f) + 5;
         public int Speed => Mathf.FloorToInt((Attributes.Speed * Level) / 100f) + 5;
         
-        public bool TakeDamage(Move move , Pokemon attacker)
+        public DamageDetails TakeDamage(Move move , Pokemon attacker)
         {
-            float modifiers = Random.Range(.85f, 1f);
+            float critical = 1f;
+            
+            if (Random.value * 100f <= 6.25f)
+            {
+                critical = 2f;
+            }
+            
+            float type = TypeChart.GetEffectiveness(move.MoveAttributes.Type, this.Attributes.Type)
+                         * TypeChart.GetEffectiveness(move.MoveAttributes.Type, this.Attributes.Type2);
+
+
+            var damageDetails = new DamageDetails()
+            {
+                TypeEffectiveness = type,
+                Critical = critical,
+                Fainted = false,
+            };
+            
+            float modifiers = Random.Range(.85f, 1f) * type * critical;
             float a = (2 * attacker.Level + 10) / 250f;
             float d = a * move.MoveAttributes.Power * ((float)attacker.Attack / Defense) + 2;
             int damage = Mathf.FloorToInt(d * modifiers);
@@ -47,9 +65,9 @@ namespace Pokemon
             if (Hp <= 0)
             {
                 Hp = 0;
-                return true;
+                damageDetails.Fainted = true;
             }
-            return false;
+            return damageDetails;
         }
 
         public Move GetRandomMove()
@@ -59,6 +77,15 @@ namespace Pokemon
         }
         
     }
+
     
+    public class DamageDetails
+    {
+        public bool Fainted { get; set; }
+        
+        public float Critical { get; set; }
+        
+        public float TypeEffectiveness { get; set; }
+    }
     
 }

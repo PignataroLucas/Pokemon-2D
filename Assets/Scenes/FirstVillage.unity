@@ -1631,8 +1631,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 485, y: 91.28}
-  m_SizeDelta: {x: 291.7, y: 275.93}
+  m_AnchoredPosition: {x: 494, y: 69}
+  m_SizeDelta: {x: 435.29, y: 435.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &575714172
 MonoBehaviour:
@@ -1646,7 +1646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a5d40a769399345bfd085887b83b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attributes: {fileID: 11400000, guid: 9627ae7fb00632d4fadc5b87c2b33c82, type: 2}
+  attributes: {fileID: 11400000, guid: 13aafe643e732b243be081da61b18747, type: 2}
   level: 7
   isPlayerUnit: 0
 --- !u!114 &575714173
@@ -1669,7 +1669,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 818cf159951cf9a4e8e810b2bbab4096, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd49e43d1c06fa54394658d321a36b24, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2566,9 +2566,6 @@ MonoBehaviour:
   healthBar: {fileID: 2117320345}
   currentHp: {fileID: 117306276}
   maxHp: {fileID: 1269793228}
-  greenColor: {r: 0.078431375, g: 0.7254902, b: 0, a: 1}
-  yellowColor: {r: 0.8567765, g: 0.8962264, b: 0, a: 0}
-  redColor: {r: 0.7830189, g: 0, b: 0, a: 0}
 --- !u!1 &888439113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,9 +2975,6 @@ MonoBehaviour:
   healthBar: {fileID: 1694296715}
   currentHp: {fileID: 641374594}
   maxHp: {fileID: 1923864983}
-  greenColor: {r: 0.078431375, g: 0.7254902, b: 0, a: 0}
-  yellowColor: {r: 0.85490197, g: 0.8980392, b: 0, a: 0}
-  redColor: {r: 0.78431374, g: 0, b: 0, a: 0}
 --- !u!114 &976455408
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Ember
   description: "The target is attacked with small flames. It may also leave the target
     with a burn.\r"
-  type: 5
+  type: 2
   power: 40
   accuracy: 100
   pp: 25

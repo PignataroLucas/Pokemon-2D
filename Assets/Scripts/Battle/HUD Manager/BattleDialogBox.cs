@@ -26,6 +26,8 @@ namespace Battle.HUD_Manager
                 dialogText.text += t;
                 yield return new WaitForSeconds(1f / letterPerSecond);
             }
+
+            yield return new WaitForSeconds(1f);
         }
 
         public void EnableDialogText(bool enable)

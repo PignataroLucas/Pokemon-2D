@@ -29,7 +29,7 @@ namespace Battle.States_Battle
             _battleSystem.enemyHud.SetData(_battleSystem.enemyPokemon.Pokemon);
             _battleSystem.dialogBox.SetMoveNames(_battleSystem.playerPokemon.Pokemon.Moves);
             yield return _monoBehaviour.StartCoroutine( _battleSystem.dialogBox.TypeDialog($"A wild  {_battleSystem.enemyPokemon.Pokemon.Attributes.name} appeared."));
-            yield return new WaitForSeconds(1f);
+            //yield return new WaitForSeconds(1f);
             ChangeToPlayerAction();
         }
 

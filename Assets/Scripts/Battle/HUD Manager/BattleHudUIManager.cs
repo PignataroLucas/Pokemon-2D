@@ -19,7 +19,7 @@ namespace Battle.HUD_Manager
             nameText.text = pokemon.Attributes.Name;
             levelText.text = "Lv" + pokemon.Level;
             hpBar.SetHp((float)pokemon.Hp / pokemon.MaxHp );
-            //hpBar.SetHp(pokemon.Hp,pokemon.MaxHp);
+            hpBar.SetHp(pokemon.Hp,pokemon.MaxHp);
         }
 
         public IEnumerator UpdateHp()

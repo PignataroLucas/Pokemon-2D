@@ -1837,7 +1837,7 @@ GameObject:
   - component: {fileID: 609083636}
   - component: {fileID: 609083635}
   m_Layer: 0
-  m_Name: Player Pokemon Name
+  m_Name: Enemy Pokemon Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1974,7 +1974,7 @@ GameObject:
   - component: {fileID: 641374595}
   - component: {fileID: 641374594}
   m_Layer: 0
-  m_Name: Player Pokemon Current HP Number Health
+  m_Name: Enemy Pokemon Current HP Number Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2112,7 +2112,7 @@ GameObject:
   - component: {fileID: 661061177}
   - component: {fileID: 661061176}
   m_Layer: 0
-  m_Name: Player Pokemon Level
+  m_Name: Enemy Pokemon Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2566,6 +2566,9 @@ MonoBehaviour:
   healthBar: {fileID: 2117320345}
   currentHp: {fileID: 117306276}
   maxHp: {fileID: 1269793228}
+  greenColor: {r: 0.078431375, g: 0.7254902, b: 0, a: 1}
+  yellowColor: {r: 0.8567765, g: 0.8962264, b: 0, a: 0}
+  redColor: {r: 0.7830189, g: 0, b: 0, a: 0}
 --- !u!1 &888439113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2929,7 +2932,7 @@ GameObject:
   - component: {fileID: 976455408}
   - component: {fileID: 976455407}
   m_Layer: 0
-  m_Name: Player Pokemon HP BAR
+  m_Name: Enemy Pokemon HP BAR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2975,6 +2978,9 @@ MonoBehaviour:
   healthBar: {fileID: 1694296715}
   currentHp: {fileID: 641374594}
   maxHp: {fileID: 1923864983}
+  greenColor: {r: 0.078431375, g: 0.7254902, b: 0, a: 0}
+  yellowColor: {r: 0.85490197, g: 0.8980392, b: 0, a: 0}
+  redColor: {r: 0.78431374, g: 0, b: 0, a: 0}
 --- !u!114 &976455408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3520,7 +3526,7 @@ GameObject:
   - component: {fileID: 1211625717}
   - component: {fileID: 1211625716}
   m_Layer: 0
-  m_Name: Player Pokemon HP BAR Background
+  m_Name: Enemy Pokemon HP BAR Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13507,7 +13513,7 @@ GameObject:
   - component: {fileID: 1694296716}
   - component: {fileID: 1694296715}
   m_Layer: 0
-  m_Name: Player Pokemon HP BAR Health
+  m_Name: Enemy Pokemon HP BAR Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13836,7 +13842,7 @@ GameObject:
   - component: {fileID: 1923864984}
   - component: {fileID: 1923864983}
   m_Layer: 0
-  m_Name: Player Pokemon Max HP Number Health
+  m_Name: Enemy Pokemon Max HP Number Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

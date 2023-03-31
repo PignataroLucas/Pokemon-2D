@@ -30,7 +30,6 @@ namespace Battle.States_Battle
 
             bool isFainted = _battleSystem.playerPokemon.Pokemon.TakeDamage(move, _battleSystem.playerPokemon.Pokemon);
             yield return _battleSystem.playerHud.UpdateHp();
-
             if (isFainted)
             {
                 yield return _battleSystem.dialogBox.TypeDialog(

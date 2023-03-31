@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\AI\FSM.cs" />
      <Compile Include="Assets\Scripts\Player\MVC\PlayerView.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Battle\MathFormulas\MathFunctions.cs" />
      <Compile Include="Assets\Scripts\Utility\Managers\IEventListener.cs" />
      <Compile Include="Assets\Scripts\Utility\Managers\GenericEvents.cs" />
      <Compile Include="Assets\Scripts\Player\MVC\PlayerController.cs" />
@@ -98,7 +99,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Scripts\Battle\MathFormulas\MathFunctions.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

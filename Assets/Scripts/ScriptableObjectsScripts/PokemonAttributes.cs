@@ -75,6 +75,35 @@ namespace ScriptableObjectsScripts
         Rock,
         Water
     }
+
+    //https://pokemondb.net/type
+    public class TypeChart
+    {
+        private float[][] _chart =
+        {   
+             // types                    Nor  Fir   WAT    Ele  Grass   Ice  Fight  Poi    Gro    Fly     Psy     Bugg     Rock    Ghost   Drag    Dark    Steel   Fairy
+                /*None*/     new float[] {1f,  1f,   1f,   1f,   1f,    1f,   1f,   1f,    1f,     1f,     1f,     1f,     1f,     1f,     1f,     1f,     1f,     1f },
+                /*NORMAL*/   new float[] {1f,  1f,   1f,   1f,   1f,    1f,   1f,   1f,    1f,     1f,     1f,     1f,     0.5f,   0f,     1f,     1f,     0.5f,   1f },
+                /*FIRE*/     new float[] {1f,  0.5f, 0.5f, 1f,   2f,    2f,   1f,   1f,    1f,     1f,     1f,     2f,     0.5f,   1f,     0.5f,   1f,     2f,     1f },
+                /*WATER*/    new float[] {1f,  2f,   0.5f, 1f,   0.5f,  1f,   1f,   1f,    2f,     1f,     1f,     1f,     2f,     1f,     0.5f,   1f,     1f,     1f },
+                /*ELECTRIC*/ new float[] {1f,  1f,   2f,   0.5f, 0.5f,  1f,   1f,   1f,    0f,     2f,     1f,     1f,     1f,     1f,     0.5f,   1f,     1f,     1f },
+                /*GRASS*/    new float[] {1f,  0.5f, 2f,   1f,   0.5f,  1f,   1f,   0.5f,  2f,     0.5f,   1f,     0.5f,   2f,     1f,     0.5f,   1f,     0.5f,   1f },
+                /*ICE*/      new float[] {1f,  0.5f, 0.5f, 1f,   2f,    0.5f, 1f,   1f,    2f,     2f,     1f,     1f,     1f,     1f,     2f,     1f,     0.5f,   1f },
+                /*FIGHTING*/ new float[] {2f,  1f,   1f,   1f,   1f,    2f,   1f,   0.5f,  1f,     0.5f,   0.5f,   0.5f,   2f,     0f,     1f,     2f,     2f,     0.5f },
+                /*POISON*/   new float[] {1f,  1f,   1f,   1f,   2f,    1f,   1f,   0.5f,  0.5f,   1f,     1f,     1f,     0.5f,   0.5f,   1f,     1f,     0f,     2f },
+                /*GROUND*/   new float[] {1f,  2f,   1f,   2f,   0.5f,  1f,   1f,   2f,    1f,     0f,     1f,     0.5f,   2f,     1f,     1f,     1f,     2f,     1f },
+                /*FLYING*/   new float[] {1f,  1f,   1f,   0.5f, 2f,    1f,   2f,   1f,    1f,     1f,     1f,     2f,     0.5f,   1f,     1f,     1f,     0.5f,   1f },
+                /*PSYCHIC*/  new float[] {1f,  1f,   1f,   1f,   1f,    1f,   2f,   2f,    1f,     1f,     0.5f,   1f,     1f,     1f,     1f,     0f,     0.5f,   1f },
+                /*BUGG*/      new float[] {1f,  0.5f, 1f,   1f,   2f,    1f,   0.5f, 0.5f,  1f,     0.5f,   2f,     1f,     1f,     0.5f,   1f,     2f,     0.5f,   0.5f },
+                /*ROCK*/     new float[] {1f,  2f,   1f,   1f,   1f,    2f,   0.5f, 1f,    0.5f,   2f,     1f,     2f,     1f,     1f,     1f,     1f,     0.5f,   1f },
+                /*GHOST*/    new float[] {0f,  1f,   1f,   1f,   1f,    1f,   1f,   1f,    1f,     1f,     2f,     1f,     1f,     2f,     1f,     0.5f,   1f,     1f },
+                /*DRAGON*/   new float[] {1f,  1f,   1f,   1f,   1f,    1f,   1f,   1f,    1f,     1f,     1f,     1f,     1f,     1f,     2f,     1f,     0.5f,   0f },
+                /*DARK*/     new float[] {1f,  1f,   1f,   1f,   1f,    1f,   0.5f, 1f,    1f,     1f,     2f,     1f,     1f,     2f,     1f,     0.5f,   1f,     0.5f },
+                /*STEEL*/    new float[] {1f,  0.5f, 0.5f, 0.5f, 1f,    2f,   1f,   1f,    1f,     1f,     1f,     1f,     2f,     1f,     1f,     1f,     0.5f,   2f },
+                /*FAIRY*/    new float[] {1f,  0.5f, 1f,   1f,   1f,    1f,   2f,   0.5f,  1f,     1f,     1f,     1f,     1f,     1f,     2f,     2f,     0.5f,   1f }
+          
+        };
+    }
     
     
 }

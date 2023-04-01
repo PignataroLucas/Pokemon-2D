@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Utility.Managers;
 
 
 namespace Player.MVC
@@ -68,9 +69,15 @@ namespace Player.MVC
             {
                 if (Random.Range(1,101) <= 10)
                 {
-                    Debug.Log("Pokemon Appears");
+                    _animator.SetBool($"IsMoving",false);
+                    RandomEncounter();
                 }
             }
+        }
+
+        private void RandomEncounter()
+        {
+            EventManager.TriggerEvent(GenericEvents.RandomEncounter);
         }
     }
 }

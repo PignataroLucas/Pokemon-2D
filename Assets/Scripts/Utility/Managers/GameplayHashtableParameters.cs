@@ -5,6 +5,7 @@ namespace Utility.Managers
     public enum GameplayHashtableParameters 
     {
         ChangeState,
-        BattleSystem
+        BattleSystem,
+        GameManager
     }
 }

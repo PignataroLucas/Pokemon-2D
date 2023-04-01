@@ -14,7 +14,7 @@ namespace Player.MVC
             _model = GetComponent<PlayerModel>();
         }
 
-        private void Update()
+        public void HandleUpdate()
         {
             _model.Movement();
         }

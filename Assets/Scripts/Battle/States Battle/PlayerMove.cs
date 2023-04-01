@@ -66,8 +66,10 @@ namespace Battle.States_Battle
             yield return _battleSystem.dialogBox.TypeDialog(
                 $"{_battleSystem.playerPokemon.Pokemon.Attributes.name} used " +
                 $"{move.MoveAttributes.Name}");
-            
-            //yield return new WaitForSeconds(1f);
+
+            _battleSystem.playerPokemon.PlayAttackAnimation();
+            yield return new WaitForSeconds(1.3f);
+            _battleSystem.enemyPokemon.PlayHitAnimation(); 
             
             var damageDetails = _battleSystem.enemyPokemon.Pokemon.TakeDamage(move, _battleSystem.playerPokemon.Pokemon);
             yield return _battleSystem.enemyHud.UpdateHp();
@@ -76,6 +78,7 @@ namespace Battle.States_Battle
             {
                 yield return _battleSystem.dialogBox.TypeDialog(
                     $"{_battleSystem.enemyPokemon.Pokemon.Attributes.Name} Fainted ");
+                _battleSystem.enemyPokemon.PlayFaintAnimation();
             }
             else
             {

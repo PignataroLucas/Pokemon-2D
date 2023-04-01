@@ -1647,7 +1647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attributes: {fileID: 11400000, guid: 13aafe643e732b243be081da61b18747, type: 2}
-  level: 7
+  level: 5
   isPlayerUnit: 0
 --- !u!114 &575714173
 MonoBehaviour:

@@ -29,6 +29,7 @@ namespace Battle.Battle__Pokemon
         {
             Pokemon = new Pokemon.Pokemon(attributes, level);
             _image.sprite = isPlayerUnit ? Pokemon.Attributes.BackSprite : Pokemon.Attributes.FrontSprite;
+            _image.color = _originalColor;
             PlayEnterAnimation();         
         }
 

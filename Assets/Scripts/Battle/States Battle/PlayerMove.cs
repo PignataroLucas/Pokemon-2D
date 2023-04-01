@@ -1,5 +1,6 @@
 
 using System.Collections;
+using AI;
 using Pokemon;
 using UnityEngine;
 using Utility.Managers;
@@ -79,6 +80,9 @@ namespace Battle.States_Battle
                 yield return _battleSystem.dialogBox.TypeDialog(
                     $"{_battleSystem.enemyPokemon.Pokemon.Attributes.Name} Fainted ");
                 _battleSystem.enemyPokemon.PlayFaintAnimation();
+
+                yield return new WaitForSeconds(2f);
+                EventManager.TriggerEvent(GenericEvents.EndBattle);
             }
             else
             {

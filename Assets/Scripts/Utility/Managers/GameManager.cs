@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AI;
 using Battle;
 using GameStates;
 using Player.MVC;
@@ -39,6 +40,7 @@ namespace Utility.Managers
             _worldState.SetTransition(GameState.Battle,_battleState);
             _battleState.SetTransition(GameState.World,_worldState);
 
+            battleSystem.StartBattle();
             _fsm = new FSM<string>(_worldState);
         }
 

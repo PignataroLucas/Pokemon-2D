@@ -4,6 +4,7 @@ using Battle.HUD_Manager;
 using Battle.States_Battle;
 using UnityEngine;
 using System.Collections;
+using AI;
 using Utility.Managers;
 
 namespace Battle
@@ -26,7 +27,7 @@ namespace Battle
             OnEnableListenerSubscriptions();
         }
 
-        private void Start()
+        public void StartBattle()
         {
             _startBattle = new StartBattle<string>(this,this);
             _playerAction = new PlayerAction<string>(this,this);
@@ -39,6 +40,8 @@ namespace Battle
             _playerAction.SetTransition(State.PlayerMove,_playerMove);
             _playerMove.SetTransition(State.EnemyMove , _enemyMove);
             _enemyMove.SetTransition(State.PlayerAction,_playerAction);
+            _playerMove.SetTransition(State.Start , _startBattle);
+            _enemyMove.SetTransition(State.Start,_startBattle);
             
         }
         
